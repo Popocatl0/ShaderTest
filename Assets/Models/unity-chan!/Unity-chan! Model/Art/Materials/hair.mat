@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: hair
+  m_Shader: {fileID: 4800000, guid: ba443debe3db40e41b33cf3e61b382d0, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _EnvMapSampler:
+        m_Texture: {fileID: 2800000, guid: 763c5d30206d1d54a9b49b3309e37fe1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FalloffSampler:
+        m_Texture: {fileID: 2800000, guid: cc8f70f2ec571e9478efa98c041cde7b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlossMap:
+        m_Texture: {fileID: 2800000, guid: 2ec6e1532acb1254f9f3797b5d82db44, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ILMTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: cbb65ec17f92eb44fb0dde6381b6a415, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMapSampler:
+        m_Texture: {fileID: 2800000, guid: 9eea3b9b4b755f64da2c821145616f44, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RimLightSampler:
+        m_Texture: {fileID: 2800000, guid: a18067604964b5a4d8fd5552ed0d789e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SSSTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularReflectionSampler:
+        m_Texture: {fileID: 2800000, guid: c4271b2b1e8bfa949aa9230abaa7709e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularTex:
+        m_Texture: {fileID: 2800000, guid: c4271b2b1e8bfa949aa9230abaa7709e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _DarkenInnerLineColor: 0.2
+    - _EdgeThickness: 0.5
+    - _FalloffPower: 0.5
+    - _Glossiness: 0
+    - _Outline: 0.0035
+    - _OutlineWidth: 0.035
+    - _RimAmount: 0.8
+    - _RimThreshold: 0.25
+    - _ShadowContrast: 1
+    - _ShadowPower: 0
+    - _ShadowSmooth: 0.5
+    - _ShadowThreshold: 2
+    - _SpecularFalloff: 2
+    - _SpecularPower: 251.3
+    - _SpecularSize: 1
+    m_Colors:
+    - _AmbientColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _LightDirection: {r: 0, g: 0, b: 1, a: 1}
+    - _OutlineColor: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ShadowColor: {r: 1, g: 0, b: 0.58695984, a: 1}
+    - _ShadowTint: {r: 1, g: 0, b: 0.48557186, a: 1}
+    - _SpecularColor: {r: 0.6329318, g: 0.6329318, b: 0.6329318, a: 1}

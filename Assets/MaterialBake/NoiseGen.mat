@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: NoiseGen
+  m_Shader: {fileID: 4800000, guid: 6c7aa11c62b270a48a32df0b9c7ec579, type: 3}
+  m_ShaderKeywords: _DETAIL_MULX2 _ENABLE_D_ON _FRESNELMODEL_SCHLICKIOR _GEOSHADOWMODEL_KURT
+    _METALLICGLOSSMAP _NORMALDISTMODEL_WARD _NORMALMAP _SMITHGEOSHADOWMODEL_WALTER
+    _UNLIT_ON
+  m_LightmapFlags: 6
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 2800000, guid: 87ce03bd447ccce48bbff87ac0d8355f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ILMTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: 59c8de363dc14c54986d0751c2c38342, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SSSTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Specs2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SurfaceDistortion:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SurfaceNoise:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WindDistortionMap:
+        m_Texture: {fileID: 2800000, guid: fbbb978b93059f547960cc5ad697f91f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Amplitude: 0
+    - _Anisotropic: 1
+    - _BendRotationRandom: 0.318
+    - _BladeCurve: 1.68
+    - _BladeForward: -0.25
+    - _BladeHeight: 0.5
+    - _BladeHeightRandom: 0.15
+    - _BladeWidth: 0.075
+    - _BladeWidthRandom: 0.04
+    - _BumpScale: 1
+    - _CellSize: 0.58
+    - _Cull: 2
+    - _Cutoff: 0
+    - _DarkenInnerLineColor: 0.2
+    - _DepthMaxDistance: 0
+    - _DetailBumpScale: 1
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _ENABLE_D: 1
+    - _ENABLE_F: 0
+    - _ENABLE_G: 0
+    - _ENABLE_NDF: 0
+    - _FoamDistance: 101.91
+    - _FoamMaxDistance: 0.4
+    - _FoamMinDistance: 0.04
+    - _FresnelModel: 1
+    - _GeoShadowModel: 8
+    - _GlossMapScale: 1
+    - _Glossiness: 0.87
+    - _GlossyReflections: 1
+    - _Ior: 1
+    - _LightIndicator: 0
+    - _Metallic: 0.133
+    - _Mode: 0
+    - _NormalDistModel: 7
+    - _OcclusionStrength: 1
+    - _OneColorShadow: 0
+    - _Outline: 0.5
+    - _OutlineWidth: 0.264
+    - _Parallax: 0.02
+    - _ParallaxStrength: 0
+    - _Persistance: 0.036
+    - _RandomNumber: 31447
+    - _RimAmount: 0.802
+    - _RimThreshold: 0.157
+    - _Roughness: 1
+    - _Scale: 1
+    - _ScrollSpeed: 0
+    - _ShadowContrast: 1
+    - _ShadowPower: 0.323
+    - _ShadowThreshold: 0.12
+    - _SmithGeoShadowModel: 1
+    - _Smoothness: 0.1
+    - _SmoothnessTextureChannel: 0
+    - _SpecularFalloff: 0.799
+    - _SpecularHighlights: 1
+    - _SpecularPower: 1
+    - _SpecularRange: 1
+    - _SpecularSize: 1
+    - _SrcBlend: 1
+    - _Step: 2
+    - _SurfaceDistortionAmount: 0.869
+    - _SurfaceNoiseCutoff: 0
+    - _TessellationEdgeLength: 7
+    - _TessellationInside: 20.2
+    - _TessellationUniform: 51.4
+    - _TimeScale: 0
+    - _TranslucentGain: 0.5
+    - _UVSec: 0
+    - _UnityLightingContribution: 1
+    - _Unlit: 1
+    - _Value1: 0.864
+    - _Value2: 0.32
+    - _Value3: 0
+    - _Value4: 0
+    - _Value5: 0
+    - _WindQuality: 0
+    - _WindStrength: 0.5
+    - _WireframeSmoothing: 0
+    - _WireframeThickness: 1.01
+    - _ZWrite: 1
+    m_Colors:
+    - _AmbientColor: {r: 0, g: 0, b: 0, a: 1}
+    - _BottomColor: {r: 0.089011766, g: 0.38679248, b: 0.0784532, a: 1}
+    - _CellSize: {r: 1, g: 1, b: 1, a: 0}
+    - _Color: {r: 1, g: 0, b: 0, a: 1}
+    - _Color2: {r: 1, g: 0, b: 0, a: 1}
+    - _DepthGradientDeep: {r: 1, g: 0, b: 0, a: 1}
+    - _DepthGradientShallow: {r: 0, g: 0, b: 0, a: 1}
+    - _Emission: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
+    - _LightDirection: {r: 0, g: 0, b: 1, a: 1}
+    - _OutlineColor: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
+    - _Period: {r: 4, g: 4, b: 4, a: 0}
+    - _Random: {r: 12.9898, g: 78.233, b: 37.719, a: 1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ScrollDirection: {r: 1.5, g: 0.75, b: 1, a: 0}
+    - _ShadowTint: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+    - _SpecColor: {r: 0.5188679, g: 0.42831078, b: 0.42831078, a: 1}
+    - _SpecColor2: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecDirection2: {r: 0, g: 1, b: 0, a: 0}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SurfaceNoiseScroll: {r: -1.17, g: 0.03, b: 0, a: 0}
+    - _TopColor: {r: 0.13995194, g: 0.8018868, b: 0.15572327, a: 1}
+    - _TopColor2: {r: 0.81088585, g: 0.8962264, b: 0.14796188, a: 1}
+    - _Vector: {r: 0.85, g: 0.82, b: 0, a: 0}
+    - _WindFrequency: {r: 0.05, g: 0.05, b: 0, a: 0}
+    - _WireframeColor: {r: 0, g: 0, b: 0, a: 1}
