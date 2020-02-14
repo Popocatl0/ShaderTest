@@ -541,7 +541,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &304541259
 Transform:
   m_ObjectHideFlags: 0
@@ -776,7 +776,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433231167}
-  m_LocalRotation: {x: 0.10806372, y: -0.00000001416258, z: -0.00000003531919, w: 0.994144}
+  m_LocalRotation: {x: 0.1080637, y: 0.00000002059106, z: -0.000000039096918, w: 0.994144}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1232,7 +1232,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575297167}
-  m_LocalRotation: {x: -0.1080637, y: 0.00000005478785, z: -0.0000003240662, w: -0.994144}
+  m_LocalRotation: {x: -0.10806372, y: 0.000000020034204, z: -0.00000032028848, w: -0.994144}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2354,28 +2354,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1467685338}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1652810277 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2448491887788952225, guid: 6c4d200843798294383d7c475796170a,
-    type: 3}
-  m_PrefabInstance: {fileID: 5970409094160730520}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1652810278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652810277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78488921cdb32da4da905f7d2d84276f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bladeMode: 0
-  TPCamera: {fileID: 1187156946}
-  cutPlane: {fileID: 304541259}
-  reference: {fileID: 921628427}
 --- !u!1 &1721907187
 GameObject:
   m_ObjectHideFlags: 0
@@ -2681,11 +2659,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1652810278, guid: 6c4d200843798294383d7c475796170a, type: 3}
+      propertyPath: TPCamera
+      value: 
+      objectReference: {fileID: 1187156946}
+    - target: {fileID: 1652810278, guid: 6c4d200843798294383d7c475796170a, type: 3}
+      propertyPath: cutPlane
+      value: 
+      objectReference: {fileID: 304541259}
+    - target: {fileID: 1652810278, guid: 6c4d200843798294383d7c475796170a, type: 3}
+      propertyPath: reference
+      value: 
+      objectReference: {fileID: 921628427}
     - target: {fileID: 23600492214406953, guid: 6c4d200843798294383d7c475796170a,
         type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 510331195}
+    - target: {fileID: 23600492214406953, guid: 6c4d200843798294383d7c475796170a,
+        type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 1285645760}
     - target: {fileID: 23600492214406953, guid: 6c4d200843798294383d7c475796170a,
         type: 3}
       propertyPath: aim
@@ -2696,11 +2691,6 @@ PrefabInstance:
       propertyPath: lockAim
       value: 
       objectReference: {fileID: 10730251}
-    - target: {fileID: 23600492214406953, guid: 6c4d200843798294383d7c475796170a,
-        type: 3}
-      propertyPath: objective
-      value: 
-      objectReference: {fileID: 1285645760}
     - target: {fileID: 1702804582008158386, guid: 6c4d200843798294383d7c475796170a,
         type: 3}
       propertyPath: m_LocalPosition.x
