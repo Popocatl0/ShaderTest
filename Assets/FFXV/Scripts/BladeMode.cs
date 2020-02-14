@@ -9,7 +9,7 @@ public class BladeMode : MonoBehaviour
 
     public bool bladeMode;
     public CinemachineFreeLook TPCamera;
-    public Transform cutPlane;
+    public Transform cutPlane, reference;
     private Animator anim;
     private MoveController movement;
     private SwordController swordControl;
@@ -23,6 +23,7 @@ public class BladeMode : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
+        reference.position = cutPlane.GetChild(0).position;
         if (Input.GetButtonDown("Fire3") && !bladeMode){
             swordControl.ShowSword();
             SetMode(true);
@@ -36,8 +37,8 @@ public class BladeMode : MonoBehaviour
             forward.x = forward.z = 0;
             transform.rotation = Quaternion.Lerp(transform.rotation, forward, .2f);
             RotateCutPlane();
-            anim.SetFloat("x", Mathf.Clamp(cutPlane.localPosition.x + 0.3f, -1, 1));
-            anim.SetFloat("y", Mathf.Clamp(cutPlane.localPosition.y + .18f, -1, 1));
+            anim.SetFloat("x", Mathf.Clamp(reference.localPosition.x, -1, 1));
+            anim.SetFloat("y", Mathf.Clamp(reference.localPosition.y, -1, 1));
         }
     }
 
@@ -48,7 +49,7 @@ public class BladeMode : MonoBehaviour
         float to = state ? 20 : 40;
         float timeScale = state ? .5f : 1;
         DOVirtual.Float(TPCamera.m_Lens.FieldOfView, to, 1, FieldOfView);
-        DOVirtual.Float(Time.timeScale, timeScale, .02f, SetTimeScale);
+        //DOVirtual.Float(Time.timeScale, timeScale, .02f, SetTimeScale);
 
         cutPlane.localEulerAngles = Vector3.right * cutPlane.localEulerAngles.x;
         cutPlane.gameObject.SetActive(state);
